@@ -48,6 +48,7 @@ def save_to_m3u(links):
             channel_name = link.split('/')[-2]  # Extract channel name from link
             f.write(f'#EXTINF:-1,{channel_name}\n')
             f.write(f'{link}\n')
+            print(link)
 
 
 def save_to_m3u_with_channel_names(links):
